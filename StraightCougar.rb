@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 # -*- coding: utf-8 -*-
 require "rubygems"
 require "twitter"
@@ -27,7 +28,7 @@ begin
                  "愚問だなあ。オレは誰よりも速く走れる男だぜ"
                  when 5
                    "オレがオレの道を進むように、おまえにもおまえの道があるはずだ。さあ、おまえはどの道を選ぶ？"
-                 end))
+                 end) + "　" * rand(30))
   end
 rescue Timeout::Error
   puts "timeout"
